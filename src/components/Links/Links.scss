@@ -1,0 +1,29 @@
+.Links {
+    display: flex;
+    font-size: 15px;
+
+    a:link,
+    a:visited {
+        color: #FFF;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        text-decoration: none;
+        
+    }
+
+    img {
+        margin-right: 19px;
+        filter: brightness(0) invert(1);
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+        margin-left: 36.5px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+        cursor: pointer;
+    }
+
+}

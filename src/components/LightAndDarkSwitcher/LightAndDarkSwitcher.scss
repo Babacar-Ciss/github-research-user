@@ -1,0 +1,45 @@
+.LightAndDarkSwitcher {
+    width: 12.3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .3s ease;
+    color: red;
+
+    &__icon-inDark {
+        filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(102%);
+    }
+
+    &__icon-inLight {
+        filter: brightness(0) saturate(100%) invert(49%) sepia(26%) saturate(416%) hue-rotate(178deg) brightness(92%) contrast(93%);
+    }
+
+
+    & p {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 19.25px;
+        letter-spacing: 2.5px;
+        margin-top: 3px;
+    }
+
+    &__paragraph-inLight {
+        color: #697C9A;
+    }
+
+    &__paragraph-inDark {
+        color: #FFF;
+    }
+
+    .hoverInDark {
+        color: #90A4D4;
+        filter: brightness(0) saturate(100%) invert(72%) sepia(19%) saturate(686%) hue-rotate(186deg) brightness(89%) contrast(84%);
+    }
+
+    .hoverInLight {
+        color: #222731;
+        filter: brightness(0) saturate(100%) invert(13%) sepia(10%) saturate(1373%) hue-rotate(182deg) brightness(89%) contrast(92%);
+    }
+
+}
