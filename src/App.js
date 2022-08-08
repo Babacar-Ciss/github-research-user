@@ -41,9 +41,16 @@ function App() {
     setSearchValueInput(e.target.value)
   }
 
+  const setSearchPressHandler = (e) => {
+    console.log(e.code)
+    if(e.code === "Enter") {
+      searhUserHandler();
+    }
+  }
+
+
   const searhUserHandler = () => {
     setUsername(searchValueInput);
-    
   } 
 
   useEffect(() => {
@@ -62,14 +69,14 @@ function App() {
 
   return (
     
-    <GlobalContext.Provider value={{switchThemeHandler,isDarkLight,setSearchValueInputHandler,searhUserHandler,datas, err}}>
+    <GlobalContext.Provider value={{switchThemeHandler,isDarkLight,setSearchValueInputHandler,setSearchPressHandler,searhUserHandler,datas, err}}>
     <StyleBackgroundColor toggleDarkLight = {isDarkLight}> 
       <div className="App">
           <motion.div initial={{opacity : 0}}
                       animate={{opacity : 1}}
                       transition= {{duration : 0.5}}
                       className='Container'>
-          {console.log(datas) }
+
             <Header />
             <SearchUsername />
             
@@ -78,7 +85,6 @@ function App() {
               : <Informations />
             }
 
-            {console.log(err)}
       
           </motion.div>
         </div>

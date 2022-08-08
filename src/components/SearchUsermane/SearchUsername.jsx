@@ -11,32 +11,45 @@ const Input = styled.input`
         border: none;
         text-align: left;
         margin-left: 80px ;
-        margin-top: 22px;font-size: 18px;
+        margin-top: 22px;
+        font-size: 18px;
         font-weight: 400;
         color: ${props => props.toggleDarkLight ==='Dark' ? "#FFF" : "#222731"};
         font-family: "Space Mono";
         caret-color: #0079FF;
+
+        @media (min-width: 375px) and (max-width: 1440px) {
+            margin-left: 50px ;
+            margin-top: 17px;
+            width: 54%;
+        }
 
         ::placeholder {
             font-family: "Space Mono";
             font-size: 18px;
             font-weight: 400;
             color: ${props => props.toggleDarkLight ==='Dark' ? "#FFF" : "#4B6A9B"};
+
+            @media (min-width: 375px) and (max-width: 1440px) {
+                font-size: 13px;
+            }
         }
 
         :focus {
             outline: none;
-        }`
+        }
+        `
 
 const SearchUsername = () => {
 
-    const {isDarkLight, setSearchValueInputHandler, searhUserHandler, err} = useContext(GlobalContext);
+    const {isDarkLight, setSearchValueInputHandler, searhUserHandler, err,setSearchPressHandler} = useContext(GlobalContext);
 
 
     return(
         <div style={isDarkLight === "Dark" ? {backgroundColor : "#1E2A47"} 
                                             : {backgroundColor : "#FEFEFE"}}
-            className="SearchUsername">
+            className="SearchUsername"
+            onKeyDown = {setSearchPressHandler}>
 
              <Input     className="SearchUsername__inputField"  
                    type="text" 
@@ -48,10 +61,10 @@ const SearchUsername = () => {
                err ? <p className="SearchUsername__error">No results</p> : null
 
             }
-            {/* <p className="SearchUsername__error">No results</p> */}
             
             <button className="SearchUsername__button"
-                    onClick = {searhUserHandler}> 
+                    onClick = {searhUserHandler}
+                    > 
                         Search 
             </button>
         </div>

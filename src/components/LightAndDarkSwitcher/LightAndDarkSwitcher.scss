@@ -2,10 +2,16 @@
     width: 12.3%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     cursor: pointer;
     transition: all .3s ease;
     color: red;
+
+    @media (min-width: 375px) and (max-width: 1440px) {
+       justify-content: flex-end;
+       text-align: right;
+       width: 25.9%;
+    }
 
     &__icon-inDark {
         filter: brightness(0) saturate(100%) invert(96%) sepia(0%) saturate(0%) hue-rotate(202deg) brightness(106%) contrast(102%);
@@ -22,6 +28,12 @@
         line-height: 19.25px;
         letter-spacing: 2.5px;
         margin-top: 3px;
+        margin-right: 16px;
+
+        @media (min-width: 375px) and (max-width: 1440px) {
+            margin-right: 16px;
+         }
+
     }
 
     &__paragraph-inLight {

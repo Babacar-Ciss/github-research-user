@@ -8,7 +8,10 @@
     position: relative;
     font-family: "Space Mono";
 
-    
+    @media (min-width: 375px) and (max-width: 1440px) {
+        height: 60px;
+    }
+
     &__button {
         width: 106px;
         height: 50px;
@@ -25,6 +28,11 @@
         border: none;
         line-height: 24px;
 
+        @media (min-width: 375px) and (max-width: 1440px) {
+            width: 84px;
+            height: 46px;
+            margin-right: 7px;
+        }
 
         &:hover {
             background-color:   #60ABFF;
@@ -41,6 +49,13 @@
         position: absolute;
         top: 23px;
         left: 32px;
+
+        @media (min-width: 375px) and (max-width: 1440px) {
+            top: 50%;
+            left: 14px;
+            transform: translateY(-50%);
+        }
+     
     }
 
     &__error {
@@ -51,5 +66,15 @@
         color: #F74646 ;
         text-align: right;
         margin-left: 48px;
+        
+        @media (min-width: 375px) and (max-width: 1440px) {
+            width: 50%;
+            font-size: 13px;
+            position: absolute;
+            top: 0;
+            left: 10%;
+        }
     }
+
+   
 }

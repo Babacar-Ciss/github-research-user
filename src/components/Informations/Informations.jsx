@@ -56,10 +56,9 @@ const Informations = () => {
 
             <div style={isDarkLightBGHandler(isDarkLight , "1E2A47" , "FEFEFE")}         
                 className="Informations">
-           {console.log(date)}
 
-           <img src={datas.avatar_url} className="Informations__avatar"  alt="Avatar"/>
            <div className="Informations__Container">
+           <img src={datas.avatar_url} className="Informations__Container--avatar"  alt="Avatar"/>
            
            <h2 style={isDarkLightColorHandler(isDarkLight, "FFF" , "2B3442")}
                className="Informations__Container--name"> {name} </h2>
