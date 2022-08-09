@@ -16,7 +16,6 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,24 +28,23 @@ Users should be able to:
 - Search for GitHub users by their username
 - See relevant user information based on their search
 - Switch between light and dark themes
-- **Bonus**: Have the correct color scheme chosen for them based on their computer preferences. _Hint_: Research `prefers-color-scheme` in CSS.
+
 
 ### Screenshot
+<div style='display : flex; flex-wrap : wrap';>
+<img style="width : 50%; display : block;" src="./src/assets/Readme-pictures/screenshoot-github-user-researcher-2.PNG"/>
 
-![](./screenshot.jpg)
+<img style=" width : 50%" src="./src/assets/Readme-pictures/screenshoot-github-user-researcher.PNG"/>
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+<img style="width: 50%; " src="./src/assets/Readme-pictures/screenshoot-github-user-researcher-3.PNG"/>
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
+<img style="width : 50%;height : 263px; display : block;" src="./src/assets/Readme-pictures/screenshoot-github-user-researcher-4.PNG"/>     
+</div> 
+ 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [](https://www.frontendmentor.io/solutions/style-components-scss-in-react-framermotion-Kq7UTzAhit)
+- Live Site URL: [Add live site URL here](https://githubresearcheruser.netlify.app/)
 
 ## My process
 
